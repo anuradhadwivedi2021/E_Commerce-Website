@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Bella Cucina and make a reservation for an unforgettable dining experience">
+    <title>Contact & Reservations | Bella Cucina</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#index.html" class="logo">Bella Cucina</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#index.html">Home</a></li>
+                    <li><a href="#menu.html">Menu</a></li>
+                    <li><a href="#about.html">About</a></li>
+                    <li><a href="#contact.html" class="active">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=1200');">
+        <h1>Contact Us</h1>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>We'd love to hear from you! Whether you have questions, want to make a reservation, or just want to say hello, feel free to reach out.</p>
+                    
+                    <div style="margin-top: 30px;">
+                        <h3 style="margin-bottom: 15px; color: #c41e3a;">Location</h3>
+                        <p>123 Italian Street<br>
+                        New York, NY 10001</p>
+                    </div>
+                    
+                    <div style="margin-top: 25px;">
+                        <h3 style="margin-bottom: 15px; color: #c41e3a;">Phone</h3>
+                        <p><a href="tel:5551234567" style="color: #666; text-decoration: none;">(555) 123-4567</a></p>
+                    </div>
+                    
+                    <div style="margin-top: 25px;">
+                        <h3 style="margin-bottom: 15px; color: #c41e3a;">Email</h3>
+                        <p><a href="mailto:info@bellacucina.com" style="color: #666; text-decoration: none;">info@bellacucina.com</a></p>
+                    </div>
+                    
+                    <div style="margin-top: 25px;">
+                        <h3 style="margin-bottom: 15px; color: #c41e3a;">Hours</h3>
+                        <p>
+                            <strong>Monday - Thursday:</strong> 11:00 AM - 10:00 PM<br>
+                            <strong>Friday - Saturday:</strong> 11:00 AM - 11:00 PM<br>
+                            <strong>Sunday:</strong> 12:00 PM - 9:00 PM
+                        </p>
+                    </div>
+
+                    <div style="margin-top: 25px;">
+                        <h3 style="margin-bottom: 15px; color: #c41e3a;">Follow Us</h3>
+                        <div style="display: flex; gap: 15px;">
+                            <a href="#" style="color: #c41e3a; text-decoration: none; font-weight: 500;">Facebook</a>
+                            <a href="#" style="color: #c41e3a; text-decoration: none; font-weight: 500;">Instagram</a>
+                            <a href="#" style="color: #c41e3a; text-decoration: none; font-weight: 500;">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reservation Form -->
+                <div class="contact-form">
+                    <h2 style="margin-bottom: 10px;">Make a Reservation</h2>
+                    <p style="color: #666; margin-bottom: 25px;">Book your table and join us for an unforgettable meal</p>
+                    
+                    <div class="success-message">
+                        <strong>Success!</strong> Your reservation request has been submitted. We'll contact you shortly to confirm.
+                    </div>
+
+                    <form id="reservationForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required aria-required="true">
+                            <div class="error-message"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required aria-required="true">
+                            <div class="error-message"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required aria-required="true">
+                            <div class="error-message"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date">Reservation Date *</label>
+                            <input type="date" id="date" name="date" required aria-required="true">
+                            <div class="error-message"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="time">Preferred Time *</label>
+                            <select id="time" name="time" required aria-required="true">
+                                <option value="">Select a time</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="11:30">11:30 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="12:30">12:30 PM</option>
+                                <option value="13:00">1:00 PM</option>
+                                <option value="13:30">1:30 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="17:00">5:00 PM</option>
+                                <option value="17:30">5:30 PM</option>
+                                <option value="18:00">6:00 PM</option>
+                                <option value="18:30">6:30 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="19:30">7:30 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                                <option value="20:30">8:30 PM</option>
+                                <option value="21:00">9:00 PM</option>
+                            </select>
+                            <div class="error-message"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="guests">Number of Guests *</label>
+                            <select id="guests" name="guests" required aria-required="true">
+                                <option value="">Select number of guests</option>
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5">5 Guests</option>
+                                <option value="6">6 Guests</option>
+                                <option value="7">7 Guests</option>
+                                <option value="8">8 Guests</option>
+                                <option value="more">More than 8 (call us)</option>
+                            </select>
+                            <div class="error-message"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Special Requests (Optional)</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Dietary restrictions, occasion, seating preferences, etc."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Reservation</button>
+                    </form>
+
+                    <p style="margin-top: 20px; font-size: 0.9rem; color: #666;">
+                        * Required fields. For parties larger than 8 guests, please call us directly at (555) 123-4567.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section style="padding: 60px 0; background-color: #f9f9f9;">
+        <div class="container">
+            <h2 class="section-title">Find Us</h2>
+            <p class="section-subtitle">Located in the heart of the city</p>
+            
+            <!-- Embedded Map Placeholder -->
+            <div style="margin-top: 40px; background-color: #e0e0e0; height: 400px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                <div style="text-align: center;">
+                    <p style="font-size: 1.2rem; color: #666; margin-bottom: 10px;">📍 Map Location</p>
+                    <p style="color: #999;">123 Italian Street, New York, NY 10001</p>
+                    <p style="color: #999; margin-top: 10px; font-size: 0.9rem;">
+                        (In production, integrate Google Maps or Mapbox here)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Bella Cucina</h3>
+                    <p>Bringing authentic Italian flavors to your table since 1995.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Hours</h4>
+                    <p>Monday - Thursday: 11am - 10pm</p>
+                    <p>Friday - Saturday: 11am - 11pm</p>
+                    <p>Sunday: 12pm - 9pm</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <p>123 Italian Street</p>
+                    <p>New York, NY 10001</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: info@bellacucina.com</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bella Cucina. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
